@@ -10,6 +10,10 @@ Monetary rewards are settled with a clearly labeled **demo payment simulator** â
 
 **App:** https://hackachusetts-project-bounty-tovar.vercel.app/
 
+## Video demo
+
+**Youtube Link:** https://youtu.be/l1WfYQAokQI
+
 The demo runs in **Massachusetts** (all seeded tasks are posted there). Sign in with any account below, or sign up a new account (the demo restricts sign-up to Massachusetts so you immediately see listings).
 
 ### Demo accounts
