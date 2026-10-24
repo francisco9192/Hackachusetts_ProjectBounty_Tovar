@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+
+# Local environment files (never commit secrets)
+.env.local
+.env.*.local
+
+# Build output
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+*.local
+
+# Vite / tooling caches
+.vite
+coverage
+*.tsbuildinfo
+
+# NOTE: Do NOT ignore the .kiro directory. The specs, steering docs, and hooks
+# under .kiro/ must be committed (Hackachusetts judging requirement).

@@ -1,0 +1,14 @@
+﻿{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Test domain rules on save",
+      "trigger": "PostFileSave",
+      "matcher": "src[\\\\/]domain[\\\\/].*\\.ts$|tests[\\\\/]domain[\\\\/].*\\.ts$",
+      "action": {
+        "type": "command",
+        "command": "npm test"
+      }
+    }
+  ]
+}

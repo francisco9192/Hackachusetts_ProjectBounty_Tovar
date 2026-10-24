@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Visible focus ring for keyboard users across all interactive controls.
+   Later accessibility tasks build on this baseline. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid theme('colors.brand.600');
+    outline-offset: 2px;
+  }
+
+  body {
+    @apply bg-surface text-ink antialiased;
+  }
+}
