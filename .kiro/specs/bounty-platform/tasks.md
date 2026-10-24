@@ -10,7 +10,7 @@ Manual prerequisites are called out inside the relevant task's details (creating
 
 ## Tasks
 
-- [-] 1. Scaffold project and tooling
+- [x] 1. Scaffold project and tooling
   - Initialize a Vite React + TypeScript app at the repo root; add Tailwind CSS and `tailwind.config.ts`, React Router, and TypeScript strict mode
   - Create the folder structure from the design: `src/domain`, `src/lib`, `src/components`, `src/pages`, `tests/domain`, `supabase/`, `docs/`
   - Add `vercel.json` with the SPA rewrite `{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }`
@@ -19,171 +19,171 @@ Manual prerequisites are called out inside the relevant task's details (creating
   - Create `docs/kiro-log.md` with a first dated bullet noting the scaffold
   - _Requirements: 10.2, 11.6, 12.4_
 
-- [ ] 2. Set up Supabase client and env wiring
+- [x] 2. Set up Supabase client and env wiring
   - Create `src/lib/supabase.ts` that reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` and throws a clear dev error naming the missing variable when either is absent
   - Install `@supabase/supabase-js`; export a single configured client using only the anon key
   - Note (manual prerequisite): the developer creates the Supabase project in the dashboard and copies the URL and anon key into `.env.local`
   - _Requirements: 10.2, 17.4_
 
-- [ ] 3. Domain constants, labels, and reward rules
-  - [ ] 3.1 Implement `src/domain/constants.ts` and `src/domain/labels.ts`
+- [x] 3. Domain constants, labels, and reward rules
+  - [x] 3.1 Implement `src/domain/constants.ts` and `src/domain/labels.ts`
     - Define `US_STATES` (51 values), `CATEGORIES`, Task/Application/Reward statuses, Reward_Type and Nonmonetary_Kind lists, and field length/count limits
     - Implement `humanize` (e.g. `in_progress` → "In progress", `graphic_design` → "Graphic design")
     - _Requirements: 1.1, 16.9_
 
-  - [ ] 3.2 Implement `src/domain/reward.ts`
+  - [x] 3.2 Implement `src/domain/reward.ts`
     - Implement `validateReward`, `toRow`, `fromRow`, `formatReward`, and `parseDollars` (money as integer cents, reject >2 decimals)
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9_
 
-  - [ ]* 3.3 Write property test for reward round trip
+  - [x]* 3.3 Write property test for reward round trip
     - **Property 1: Reward round trip**
     - **Validates: Requirements 3.10**
 
-  - [ ]* 3.4 Write property test for reward validation
+  - [x]* 3.4 Write property test for reward validation
     - **Property 2: Reward validation accepts exactly well-formed Rewards**
     - **Validates: Requirements 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8**
 
-  - [ ]* 3.5 Write property test for reward display
+  - [x]* 3.5 Write property test for reward display
     - **Property 3: Reward display contains required information**
     - **Validates: Requirements 3.9**
 
-- [ ] 4. Domain validation functions
-  - [ ] 4.1 Implement `src/domain/validation.ts`
+- [x] 4. Domain validation functions
+  - [x] 4.1 Implement `src/domain/validation.ts`
     - Implement `normalizeSkills`, `validateSignUp`, `validateProfile`, `validateTask(input, today)`, `validateSubmission`, `validateCover`, `validateMessage`, `validateReport`, `isHttpUrl`, and `sameState`
     - All functions pure: no network, storage, or `Date.now` (current date passed in)
     - _Requirements: 1.1, 1.5, 1.10, 1.11, 1.12, 2.1, 2.3, 2.4, 2.8, 5.1, 5.8, 7.1, 7.2, 7.7, 10.4, 12.1, 13.2, 13.6, 15.2, 15.5_
 
-  - [ ]* 4.2 Write property test for skill normalization
+  - [x]* 4.2 Write property test for skill normalization
     - **Property 4: Skill normalization**
     - **Validates: Requirements 1.12, 2.8**
 
-  - [ ]* 4.3 Write property test for task form validation
+  - [x]* 4.3 Write property test for task form validation
     - **Property 5: Task form validation**
     - **Validates: Requirements 2.1, 2.3, 2.4**
 
-  - [ ]* 4.4 Write property test for sign-up and profile validation
+  - [x]* 4.4 Write property test for sign-up and profile validation
     - **Property 6: Sign-up and profile validation**
     - **Validates: Requirements 1.1, 1.5, 1.10, 1.11**
 
-  - [ ]* 4.5 Write property test for submission and URL validation
+  - [x]* 4.5 Write property test for submission and URL validation
     - **Property 7: Submission and URL validation**
     - **Validates: Requirements 7.1, 7.2, 7.7, 10.4**
 
-- [ ] 5. Domain state machines and browse/next-action logic
-  - [ ] 5.1 Implement `src/domain/taskMachine.ts`
+- [x] 5. Domain state machines and browse/next-action logic
+  - [x] 5.1 Implement `src/domain/taskMachine.ts`
     - Implement `TaskModel` and `reduce(model, request)` for apply, accept, submit, confirm, cancel, pay, markDelivered, confirmReceived, enforcing authorization, same-state, single-assignee, and transition rules
     - _Requirements: 5.2, 5.3, 5.4, 5.5, 5.6, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 7.3, 7.5, 7.6, 7.8, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 9.3, 9.7_
 
-  - [ ] 5.2 Implement `src/domain/rewardMachine.ts`
+  - [x] 5.2 Implement `src/domain/rewardMachine.ts`
     - Implement `rewardTransition` for pay / markDelivered / confirmReceived with final-state enforcement
     - _Requirements: 9.1, 9.9, 9.11, 9.12, 9.13, 9.15_
 
-  - [ ] 5.3 Implement `src/domain/browse.ts` and `src/domain/nextAction.ts`
+  - [x] 5.3 Implement `src/domain/browse.ts` and `src/domain/nextAction.ts`
     - Implement `filterTasks` (open only, AND filters, sorted newest first, null state → empty) and `nextActionLabel`
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 14.4, 14.5_
 
-  - [ ]* 5.4 Write property test for browse filtering
+  - [x]* 5.4 Write property test for browse filtering
     - **Property 8: Browse filter soundness and monotonicity**
     - **Validates: Requirements 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8**
 
-  - [ ]* 5.5 Write property test for Application uniqueness
+  - [x]* 5.5 Write property test for Application uniqueness
     - **Property 9: At most one active Application per Member per Task**
     - **Validates: Requirements 5.1, 5.2, 5.3, 5.4, 5.5, 5.6**
 
-  - [ ]* 5.6 Write property test for same-state acceptance
+  - [x]* 5.6 Write property test for same-state acceptance
     - **Property 10: Same-state acceptance**
     - **Validates: Requirements 6.3, 6.4**
 
-  - [ ]* 5.7 Write property test for rejected requests changing nothing
+  - [x]* 5.7 Write property test for rejected requests changing nothing
     - **Property 11: Rejected requests change nothing**
     - **Validates: Requirements 5.3, 5.6, 6.7, 6.8, 7.5, 7.6, 7.8, 8.2, 8.3, 8.4, 9.7, 9.12**
 
-  - [ ]* 5.8 Write property test for single Assignee
+  - [x]* 5.8 Write property test for single Assignee
     - **Property 12: Single Assignee**
     - **Validates: Requirements 6.2, 6.5, 6.6, 8.5, 8.7**
 
-  - [ ]* 5.9 Write property test for Task status state machine
+  - [x]* 5.9 Write property test for Task status state machine
     - **Property 13: Task status state machine**
     - **Validates: Requirements 7.3, 8.1, 8.4, 8.6**
 
-  - [ ]* 5.10 Write property test for simulated payment
+  - [x]* 5.10 Write property test for simulated payment
     - **Property 14: Simulated payment at most once with the agreed amount**
     - **Validates: Requirements 9.3, 9.6, 9.7**
 
-  - [ ]* 5.11 Write property test for Reward status state machine
+  - [x]* 5.11 Write property test for Reward status state machine
     - **Property 15: Reward status state machine**
     - **Validates: Requirements 9.1, 9.9, 9.11, 9.12, 9.13, 9.15**
 
-  - [ ]* 5.12 Write property test for dashboard next-action invariant
+  - [x]* 5.12 Write property test for dashboard next-action invariant
     - **Property 16: Dashboard next-action invariant**
     - **Validates: Requirements 14.4, 14.5**
 
-- [ ] 6. Database schema, RLS, RPC functions, and triggers
+- [x] 6. Database schema, RLS, RPC functions, and triggers
   - Create `supabase/schema.sql` with all eight tables (`profiles`, `member_private`, `tasks`, `applications`, `submissions`, `simulated_payments`, `messages`, `reports`), CHECK constraints, partial unique indexes (one active app, one accepted app, one simulated payment per task), RLS enabled on every table, the RLS policies in the design's RLS Summary, and the `security definer` RPC functions (`apply_to_task`, `accept_application`, `cancel_task`, `submit_work`, `confirm_completion`, `simulate_payment`, `mark_reward_delivered`, `confirm_reward_received`, `task_has_youth`) with `for update` row locks and `auth.uid()` checks
   - Add the new-user trigger (`on_auth_user_created`) and the `tasks_before_insert` trigger that forces `creator_id`, `status`, `assignee_id`, `completed_at`, and `reward_status`, and normalizes skills
   - Mirror the domain error codes (`NOT_SIGNED_IN`, `NOT_SAME_STATE`, etc.) in the raised exceptions
   - Note (manual prerequisite): the developer pastes `schema.sql` into the Supabase SQL editor and runs it, and turns off email confirmation in Auth settings
   - _Requirements: 6.6, 8.8, 8.9, 8.10, 9.6, 10.1, 10.5, 10.6, 10.7, 10.8, 10.9, 13.8, 15.3_
 
-- [ ] 7. Data access layer and error mapping
+- [x] 7. Data access layer and error mapping
   - Create `src/lib/api.ts` with typed functions for reads (browse, task detail, profile, dashboard) and writes (insert task/profile/message/report, and `rpc(...)` calls for every status change)
   - Create `src/lib/errors.ts` mapping error codes to plain-language messages (unknown codes → generic message, never raw DB text) and `src/lib/withTimeout.ts` (15 s)
   - _Requirements: 8.2, 16.9, 17.4_
 
-- [ ] 8. Auth context, shared layout, and core UI primitives
-  - [ ] 8.1 Implement auth context and `RequireAuth`
+- [x] 8. Auth context, shared layout, and core UI primitives
+  - [x] 8.1 Implement auth context and `RequireAuth`
     - Create `src/lib/auth` context tracking the Supabase session; implement `RequireAuth` route wrapper that redirects Visitors to `/signin`
     - _Requirements: 1.8, 1.17, 2.6, 14.7_
 
-  - [ ] 8.2 Implement shared components
+  - [x] 8.2 Implement shared components
     - Build `Layout` (one header/nav/main/footer), `Button`, `Field` (Input/Textarea/Select with labels + `aria-describedby`), `Form` helper, `Card`, `Badge`, `RewardDisplay`, `Toast`, `Loading`, `ErrorState`, `SafeLink`, `YouthSafetyNotice`, `DemoNotice`
     - Render all user text through JSX escaping; ban `dangerouslySetInnerHTML`
     - _Requirements: 3.9, 10.3, 10.4, 16.3, 16.8, 17.3_
 
-- [ ] 9. Accounts, sign-up, sign-in, and profiles
-  - [ ] 9.1 Implement sign-up and sign-in pages
+- [x] 9. Accounts, sign-up, sign-in, and profiles
+  - [x] 9.1 Implement sign-up and sign-in pages
     - Build `SignUpPage` using `validateSignUp`, the Under 13 / 13-17 / 18+ selector that disables submit for Under 13 and shows the Youth_Safety_Notice for 13-17, call `supabase.auth.signUp` with metadata; build `SignInPage` with the single incorrect-credentials message and sign-out wiring
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9_
 
-  - [ ] 9.2 Implement profile view and edit pages
+  - [x] 9.2 Implement profile view and edit pages
     - Build `/profile/:id` (public, shows name, bio, skills, town, state, completed projects; omits email and age; not-found message) and `/profile/edit` (owner only, uses `validateProfile`)
     - _Requirements: 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.18, 7.4_
 
-- [ ] 10. Post a task
+- [x] 10. Post a task
   - Build `/tasks/new` form using `validateTask`, prefilling US_State and Town from the Member's Profile, disabling submit during request, inserting via the data layer; on success show the Task detail page
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 2.10, 3.1_
 
-- [ ] 11. Browse local tasks
+- [x] 11. Browse local tasks
   - Build `/browse` using `filterTasks`: Member defaults to Profile state, Visitor picks a state, Town/Category/Reward_Type/keyword filters, empty-state with Clear filters, and the per-task card fields
   - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4.10_
 
-- [ ] 12. Task detail: apply and review/accept applicants
-  - [ ] 12.1 Implement apply action
+- [x] 12. Task detail: apply and review/accept applicants
+  - [x] 12.1 Implement apply action
     - On `/tasks/:id`, show the apply form to eligible Members using `validateCover`, calling `apply_to_task`; handle same-state, own-task, duplicate, and not-open rejections with their messages
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.6, 5.7, 5.8, 5.9_
 
-  - [ ] 12.2 Implement applicant review and accept
+  - [x] 12.2 Implement applicant review and accept
     - Show all Applications to the Task_Creator (sorted, with applicant details and profile link) and an accept action calling `accept_application`; handle empty-state and rejection messages
     - _Requirements: 6.1, 6.2, 6.3, 6.5, 6.7, 6.8, 6.9, 8.1, 8.2, 8.3_
 
-- [ ] 13. Task detail: submit work, confirm completion, cancel
+- [x] 13. Task detail: submit work, confirm completion, cancel
   - Add the Assignee submission form using `validateSubmission` calling `submit_work`; the Task_Creator confirm-completion action calling `confirm_completion`; the Task_Creator cancel action on Open tasks calling `cancel_task`; display Submission description and URLs as `SafeLink`s
   - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.1, 8.4, 8.5_
 
-- [ ] 14. Reward settlement and demo payment simulator
+- [x] 14. Reward settlement and demo payment simulator
   - On `/tasks/:id`, show the "Simulated payment (demo only)" action (creator, completed, monetary, pending) calling `simulate_payment`; the mark-delivered action (creator, nonmonetary) and confirm-received action (assignee, nonmonetary); display current Reward_Status and the DemoNotice everywhere required
   - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 9.10, 9.11, 9.12, 9.13, 9.14, 9.15_
 
-- [ ] 15. Checkpoint - core loop works locally
+- [x] 15. Checkpoint - core loop works locally
   - Ensure all tests pass and the full loop (sign up → post → browse → apply → accept → submit → confirm → settle) runs locally. Ask the user if questions arise.
 
-- [ ] 16. DEPLOY-EARLY: ship the core loop to Vercel
+- [-] 16. DEPLOY-EARLY: ship the core loop to Vercel
   - Add any build config needed for a clean `vite build`; confirm `vercel.json` SPA rewrite; wire the production env var names so the deployed app reads the Supabase URL and anon key
   - Verify the public landing page loads for a Visitor and that a demo sign-in reaches the dashboard on the deployed link
   - Note (manual prerequisite): the developer connects the GitHub repo to a Vercel project and sets `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` in Vercel project settings; append the result to `docs/kiro-log.md`
   - _Requirements: 11.7, 11.8, 17.7_
 
-- [ ] 17. Idempotent demo seed
+- [x] 17. Idempotent demo seed
   - Create `supabase/seed.sql` with fixed UUIDs, demo auth users + identities, 3+ Massachusetts members (business 18+, student 18+, youth 13-17), 6+ MA tasks across all Reward_Types and 3+ Categories, every Task_Status represented, one Open task with a Pending Application, one Completed monetary task with its Simulated_Payment, and one Open New Hampshire task; use `on conflict ... do update` so re-running restores exact values without duplicates
   - Note (manual prerequisite): the developer runs `seed.sql` in the Supabase SQL editor (with the dashboard fallback for creating the three users if the direct `auth.users` insert fails)
   - _Requirements: 11.1, 11.2, 11.3, 11.4, 11.9_
@@ -205,7 +205,7 @@ Manual prerequisites are called out inside the relevant task's details (creating
   - On `/tasks/:id`, show the Message_Thread and input to the Task_Creator and Assignee while the task is In_Progress/Submitted/Completed, using `validateMessage`; insert messages, display them in timestamp order as plain text, show the Youth_Safety_Notice above the thread when a participant is a youth, and handle send failures with retry
   - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5, 13.6, 13.7, 13.8_
 
-- [ ] 22. Minimal dashboard
+- [x] 22. Minimal dashboard
   - Build `/dashboard` with Posted, Working On, and Applications lists sorted newest first, each with status/reward-status text, next-action labels from `nextActionLabel`, empty-state messages per list, and Visitor redirect
   - _Requirements: 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7_
 
@@ -213,11 +213,11 @@ Manual prerequisites are called out inside the relevant task's details (creating
   - Add `ReportButton` / `ReportDialog` on Task detail and Profile pages (signed-in only), with reason select + optional note using `validateReport`, inserting one Report, handling the duplicate-report message, and leaving the target unchanged
   - _Requirements: 15.1, 15.2, 15.3, 15.4, 15.5, 15.6_
 
-- [ ] 24. Accessibility pass
+- [x] 24. Accessibility pass
   - Ensure keyboard reachability and operability with visible focus indicators, labels + accessible names for icon-only buttons, color-contrast-compliant tokens, one of each landmark + one h1 per page, focus moves to first invalid field, backend errors announced via a live region, text labels alongside color/icon for statuses, and humanized enum display with no raw error text
   - _Requirements: 16.1, 16.2, 16.3, 16.4, 16.5, 16.6, 16.7, 16.8, 16.9_
 
-- [ ] 25. Responsive interface and landing page
+- [x] 25. Responsive interface and landing page
   - Ensure every page renders cleanly from 360px to 1920px with no horizontal scroll, all tokens come from the shared Tailwind theme, Loading/ErrorState/Retry and confirmation toasts behave per spec, and build the public landing page with the required text sections and a sign-up control
   - _Requirements: 17.1, 17.2, 17.3, 17.4, 17.5, 17.6, 17.7, 17.8_
 

@@ -1,11 +1,589 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "3.3 Write property test for reward round trip": {
+      "status": "passed",
+      "lastRunTimestamp": 1792863666802
+    },
+    "3.4 Write property test for reward validation": {
+      "status": "passed",
+      "lastRunTimestamp": 1792863668201
+    },
+    "3.5 Write property test for reward display": {
+      "status": "passed",
+      "lastRunTimestamp": 1792863669060
+    },
+    "5.4 Write property test for browse filtering": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865338734
+    },
+    "5.5 Write property test for Application uniqueness": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865340192
+    },
+    "5.6 Write property test for same-state acceptance": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865341584
+    },
+    "5.7 Write property test for rejected requests changing nothing": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865342983
+    },
+    "5.8 Write property test for single Assignee": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865343936
+    },
+    "5.9 Write property test for Task status state machine": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865345336
+    },
+    "5.10 Write property test for simulated payment": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865346739
+    },
+    "5.11 Write property test for Reward status state machine": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865348188
+    },
+    "5.12 Write property test for dashboard next-action invariant": {
+      "status": "passed",
+      "lastRunTimestamp": 1792865349100
+    }
+  },
   "executionHistory": {
     "1. Scaffold project and tooling": [
       {
         "executionId": "99372d67-f3ce-461b-85e8-483b7c937313",
         "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
         "timestamp": 1792861837646
+      },
+      {
+        "executionId": "99372d67-f3ce-461b-85e8-483b7c937313",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792862324893
+      }
+    ],
+    "2. Set up Supabase client and env wiring": [
+      {
+        "executionId": "a2522d6a-a1b8-4a8b-acfc-854c2e2d2c72",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792862557024
+      },
+      {
+        "executionId": "a2522d6a-a1b8-4a8b-acfc-854c2e2d2c72",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792862647560
+      }
+    ],
+    "3.1 Implement `src/domain/constants.ts` and `src/domain/labels.ts`": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863269675
+      },
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863391810
+      }
+    ],
+    "3.2 Implement `src/domain/reward.ts`": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863396008
+      },
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863521441
+      }
+    ],
+    "3. Domain constants, labels, and reward rules": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863521515
+      }
+    ],
+    "3.3 Write property test for reward round trip": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863525645
+      },
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863696668
+      }
+    ],
+    "3.4 Write property test for reward validation": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863528358
+      },
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863699366
+      }
+    ],
+    "3.5 Write property test for reward display": [
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863531014
+      },
+      {
+        "executionId": "1d3f3dc5-94c7-411a-9a2f-1a4a59d043fc",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863702113
+      }
+    ],
+    "4.1 Implement `src/domain/validation.ts`": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792863984600
+      },
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864162760
+      }
+    ],
+    "4. Domain validation functions": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864162824
+      }
+    ],
+    "4.2 Write property test for skill normalization": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864166534
+      },
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864661537
+      }
+    ],
+    "4.3 Write property test for task form validation": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864169196
+      },
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864664251
+      }
+    ],
+    "4.4 Write property test for sign-up and profile validation": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864171938
+      },
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864667242
+      }
+    ],
+    "4.5 Write property test for submission and URL validation": [
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864174665
+      },
+      {
+        "executionId": "c047f82f-4926-408d-a4f7-59bad4aae4a0",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864670320
+      }
+    ],
+    "5.1 Implement `src/domain/taskMachine.ts`": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864795167
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865000509
+      }
+    ],
+    "5.2 Implement `src/domain/rewardMachine.ts`": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864797847
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865003193
+      }
+    ],
+    "5.3 Implement `src/domain/browse.ts` and `src/domain/nextAction.ts`": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792864800780
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865005993
+      }
+    ],
+    "5. Domain state machines and browse/next-action logic": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865006029
+      }
+    ],
+    "5.4 Write property test for browse filtering": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865010464
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865373927
+      }
+    ],
+    "5.5 Write property test for Application uniqueness": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865013336
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865376694
+      }
+    ],
+    "5.6 Write property test for same-state acceptance": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865016372
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865379446
+      }
+    ],
+    "5.7 Write property test for rejected requests changing nothing": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865019242
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865382178
+      }
+    ],
+    "5.8 Write property test for single Assignee": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865022014
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865385022
+      }
+    ],
+    "5.9 Write property test for Task status state machine": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865024707
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865387979
+      }
+    ],
+    "5.10 Write property test for simulated payment": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865027472
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865390838
+      }
+    ],
+    "5.11 Write property test for Reward status state machine": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865030169
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865393610
+      }
+    ],
+    "5.12 Write property test for dashboard next-action invariant": [
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865032936
+      },
+      {
+        "executionId": "eb2a5fbd-970a-4b15-898e-3821d815ece3",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865396478
+      }
+    ],
+    "6. Database schema, RLS, RPC functions, and triggers": [
+      {
+        "executionId": "854b67c2-1ed1-4129-aa70-e7cb535d0c57",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865492828
+      },
+      {
+        "executionId": "854b67c2-1ed1-4129-aa70-e7cb535d0c57",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792865766732
+      }
+    ],
+    "7. Data access layer and error mapping": [
+      {
+        "executionId": "13151c4c-cfdd-4b8a-b880-b2c4bfe18fa5",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792866294309
+      },
+      {
+        "executionId": "13151c4c-cfdd-4b8a-b880-b2c4bfe18fa5",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792866662614
+      }
+    ],
+    "8.1 Implement auth context and `RequireAuth`": [
+      {
+        "executionId": "25545358-147e-47dc-9f65-c1d4d3eab3eb",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792866741788
+      },
+      {
+        "executionId": "25545358-147e-47dc-9f65-c1d4d3eab3eb",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867027443
+      }
+    ],
+    "8.2 Implement shared components": [
+      {
+        "executionId": "25545358-147e-47dc-9f65-c1d4d3eab3eb",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792866744649
+      },
+      {
+        "executionId": "25545358-147e-47dc-9f65-c1d4d3eab3eb",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867030180
+      }
+    ],
+    "8. Auth context, shared layout, and core UI primitives": [
+      {
+        "executionId": "25545358-147e-47dc-9f65-c1d4d3eab3eb",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867030230
+      }
+    ],
+    "9.2 Implement profile view and edit pages": [
+      {
+        "executionId": "72c286a8-ca69-4bfa-82a9-72a0c225fb56",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867089203
+      },
+      {
+        "executionId": "72c286a8-ca69-4bfa-82a9-72a0c225fb56",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867316997
+      }
+    ],
+    "9.1 Implement sign-up and sign-in pages": [
+      {
+        "executionId": "72c286a8-ca69-4bfa-82a9-72a0c225fb56",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867320286
+      },
+      {
+        "executionId": "72c286a8-ca69-4bfa-82a9-72a0c225fb56",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867562641
+      }
+    ],
+    "9. Accounts, sign-up, sign-in, and profiles": [
+      {
+        "executionId": "72c286a8-ca69-4bfa-82a9-72a0c225fb56",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792867562724
+      }
+    ],
+    "10. Post a task": [
+      {
+        "executionId": "f0349dde-b0db-4dae-bb08-732a9e84a580",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792871730785
+      },
+      {
+        "executionId": "f0349dde-b0db-4dae-bb08-732a9e84a580",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792871900441
+      }
+    ],
+    "11. Browse local tasks": [
+      {
+        "executionId": "fd65d6ae-da9b-4e3e-9bcc-386e83b18b7e",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792872831179
+      },
+      {
+        "executionId": "fd65d6ae-da9b-4e3e-9bcc-386e83b18b7e",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873012372
+      }
+    ],
+    "12.1 Implement apply action": [
+      {
+        "executionId": "3c19b9d1-0d08-42a8-920f-4cd41201c74a",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873159308
+      },
+      {
+        "executionId": "3c19b9d1-0d08-42a8-920f-4cd41201c74a",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873421164
+      }
+    ],
+    "12.2 Implement applicant review and accept": [
+      {
+        "executionId": "3c19b9d1-0d08-42a8-920f-4cd41201c74a",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873162522
+      },
+      {
+        "executionId": "3c19b9d1-0d08-42a8-920f-4cd41201c74a",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873424405
+      }
+    ],
+    "12. Task detail: apply and review/accept applicants": [
+      {
+        "executionId": "3c19b9d1-0d08-42a8-920f-4cd41201c74a",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873424487
+      }
+    ],
+    "13. Task detail: submit work, confirm completion, cancel": [
+      {
+        "executionId": "6c5780ea-829e-4c09-b4e2-487c1a22e424",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873532031
+      },
+      {
+        "executionId": "6c5780ea-829e-4c09-b4e2-487c1a22e424",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873749832
+      }
+    ],
+    "14. Reward settlement and demo payment simulator": [
+      {
+        "executionId": "6c5780ea-829e-4c09-b4e2-487c1a22e424",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873753987
+      },
+      {
+        "executionId": "6c5780ea-829e-4c09-b4e2-487c1a22e424",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792873931807
+      }
+    ],
+    "17. Idempotent demo seed": [
+      {
+        "executionId": "d85e8a64-cdbd-48f1-bba1-56265ed899f2",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792874129534
+      },
+      {
+        "executionId": "d85e8a64-cdbd-48f1-bba1-56265ed899f2",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792874383949
+      }
+    ],
+    "15. Checkpoint - core loop works locally": [
+      {
+        "executionId": "bbd06676-d1e3-4a32-b02d-188b51f53263",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792875030653
+      }
+    ],
+    "22. Minimal dashboard": [
+      {
+        "executionId": "d4a3a0c3-158b-4bce-963c-2aff8c8db674",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792875267696
+      },
+      {
+        "executionId": "d4a3a0c3-158b-4bce-963c-2aff8c8db674",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792875417879
+      }
+    ],
+    "25. Responsive interface and landing page": [
+      {
+        "executionId": "f9026c55-6830-4bee-828d-01cda52a0591",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792876244266
+      },
+      {
+        "executionId": "f9026c55-6830-4bee-828d-01cda52a0591",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792876519093
+      }
+    ],
+    "24. Accessibility pass": [
+      {
+        "executionId": "f9026c55-6830-4bee-828d-01cda52a0591",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792876525999
+      },
+      {
+        "executionId": "f9026c55-6830-4bee-828d-01cda52a0591",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792876744857
+      }
+    ],
+    "16. DEPLOY-EARLY: ship the core loop to Vercel": [
+      {
+        "executionId": "86736609-5e37-4e4b-bd1e-2eee1f0d9380",
+        "chatSessionId": "sess_5838b4c4-a23f-4f82-821b-3841bc5481d3",
+        "timestamp": 1792880974448
       }
     ]
   }
