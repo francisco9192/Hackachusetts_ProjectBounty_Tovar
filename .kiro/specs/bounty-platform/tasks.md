@@ -177,7 +177,7 @@ Manual prerequisites are called out inside the relevant task's details (creating
 - [x] 15. Checkpoint - core loop works locally
   - Ensure all tests pass and the full loop (sign up → post → browse → apply → accept → submit → confirm → settle) runs locally. Ask the user if questions arise.
 
-- [-] 16. DEPLOY-EARLY: ship the core loop to Vercel
+- [x] 16. DEPLOY-EARLY: ship the core loop to Vercel
   - Add any build config needed for a clean `vite build`; confirm `vercel.json` SPA rewrite; wire the production env var names so the deployed app reads the Supabase URL and anon key
   - Verify the public landing page loads for a Visitor and that a demo sign-in reaches the dashboard on the deployed link
   - Note (manual prerequisite): the developer connects the GitHub repo to a Vercel project and sets `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` in Vercel project settings; append the result to `docs/kiro-log.md`
@@ -221,7 +221,7 @@ Manual prerequisites are called out inside the relevant task's details (creating
   - Ensure every page renders cleanly from 360px to 1920px with no horizontal scroll, all tokens come from the shared Tailwind theme, Loading/ErrorState/Retry and confirmation toasts behave per spec, and build the public landing page with the required text sections and a sign-up control
   - _Requirements: 17.1, 17.2, 17.3, 17.4, 17.5, 17.6, 17.7, 17.8_
 
-- [ ] 26. README and judging docs
+- [x] 26. README and judging docs
   - Write the repository README listing the public test link; each demo Member's email, password, Age_Bracket, and role; local setup (install, run, test); and Supabase setup (create project, apply schema + RLS, set URL/anon key, run seed)
   - Ensure the `.kiro` folder (specs, steering, hooks) is committed and `docs/kiro-log.md` is linked from the README
   - _Requirements: 11.5, 11.6_
