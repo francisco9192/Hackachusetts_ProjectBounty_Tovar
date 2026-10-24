@@ -110,3 +110,7 @@ Run `npm test` to run the Vitest + fast-check suite once (non-watch, offline); i
 - Monetary payment is **simulated** for the demo; no real money moves and no payment credentials are collected.
 - For the demo, Browse defaults to Massachusetts and sign-up is restricted to Massachusetts so new visitors immediately see listings. These are isolated, clearly commented demo settings and are easy to revert to full 50-state behavior.
 - Full WCAG conformance requires manual assistive-technology testing beyond the automated checks performed here.
+
+## Image Use
+
+- The landing page image used and our logo found on our website were ai generated.
